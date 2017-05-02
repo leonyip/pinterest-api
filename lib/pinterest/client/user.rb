@@ -55,8 +55,7 @@ module Pinterest
       end
 
       def get_pins(options={})
-        options[:query] ||= '*'
-        get('me/search/pins', options)
+        get('me/pins', options)
       end
 
       def get_boards(options={})
